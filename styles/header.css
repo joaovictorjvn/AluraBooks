@@ -1,0 +1,212 @@
+.the-header{
+
+    background-color: var(--header-white);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+
+}
+
+.the-header--burger--menu{
+
+    width: 24px;
+    height: 24px;
+    background-image: url(../img/Menu.svg);
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+.container{
+
+    display: flex;
+    align-items: center;
+
+}
+
+.container--image{
+
+    padding: 1em;
+
+}
+
+.menu--list{
+
+    display: none;
+    position: absolute;
+    top: 100%;
+    width: 60vw;
+
+}
+
+.container--button:checked ~.menu--list{
+
+    display: block;
+
+}
+
+.container--button{
+
+    display: none;
+
+}
+
+.menu--list--title, .menu--list--item{
+
+    background-color: var(--header-white);
+    padding: 1em;
+
+}
+
+.menu--list--title{
+
+    color: var(--button-yellow);
+    font-weight: 700;
+
+}
+
+.menu--item--link{
+    
+    background: var(--gradient-blue);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-transform: uppercase;
+
+}
+
+<!---->
+
+.header--title, strong{
+
+    display: none;
+
+}
+
+.header--item{
+
+    display: none;
+
+}
+
+.category--button{
+
+    display: none;
+
+}
+
+.category--trigger{
+
+    display: none;
+
+}
+
+.icon--description{
+
+    display: none;
+
+}
+
+<!---->
+
+@media screen and (min-width: 1024px) {
+
+.header--title{
+
+    display: block;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+strong{
+
+    display:inline-block;
+    font-weight: 700;
+
+}
+
+.the-header--burger--menu{
+
+    display: none;
+
+}
+
+.header--item{
+
+    display: block;
+    padding: 1em;
+
+}
+
+.header--link{
+
+    color: var(--gradient-blue);
+    text-decoration: none;
+
+}
+
+.container--image{
+
+    padding-left: 3em;
+
+}
+
+.favorite--heart{
+
+    display: none;
+
+}
+
+.category--trigger{
+
+    display: block;
+    margin: 1em;
+
+}
+
+.menu--list{
+
+    display: none;
+    position: absolute;
+    top: 100%;
+    width: 20vw;
+
+}
+
+.category--button:checked ~.menu--list{
+
+    display: block;
+
+}
+    
+}
+
+@media screen and (min-width: 1728px){
+
+.text--menu{
+
+    display: inline-flex;
+    flex-direction: row;
+    align-self: left;
+    margin-right: 40em;
+
+}
+
+.icon--description{
+
+    display: block;
+
+}
+
+.header--link--description{
+
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+
+}
+
+}
